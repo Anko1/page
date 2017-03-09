@@ -5,7 +5,7 @@
 
 body {
 	font: 1em 'PT Sans', Arial, Helvetica, sans-serif;
-	background-image: url("ignasi_pattern_s.png");
+	background-image: url("pink_rice.png");
 	color: #333;
 }
 
@@ -124,4 +124,47 @@ body {
 	text-align: center;
 	border-top: 1px dashed #888;
 	padding: 40px 0;
+}
+
+/* Responsive CSS Grid
+================================*/
+@media only screen and (max-width: 939px) {
+	.container {
+		width: 300px;
+	}
+
+.span1,
+.span2,
+.span3,
+.span4,
+.span5,
+.span6,
+.span7,
+.span8,
+.span9,
+.span10,
+.span11,
+.span12 { width: 300px }
+
+.sidebar, .thumb {
+	display: none;
+}
+
+.header h1 {
+	position: relative;
+	font-weight: normal;
+}
+.header h1:after {
+	content: 'Mobile';
+	position: absolute;
+	bottom: -25px;
+	left: 0;
+}
+.slider {
+	height: 150px;
+	background: url(https://img2.goodfon.su/original/360x480/1/ed/pirozhnye-krem-sladost.jpg) no-repeat;
+}
+
+
+
 }
