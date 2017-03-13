@@ -85,10 +85,36 @@ body {
 	height: 30px;
 }
 .slider {
+    position: relative;
 	height: 250px;
-	background: url("https://img3.goodfon.su/original/1024x600/d/ef/delicacies-chocolates-flavors.jpg");
+	max-width: 1000px;
 	box-shadow: 0 5px 5px rgba(0,0,0,.2);
 }
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.8);
+}
+
+.active{
+	background-color: #717171;
+}
+
 .thumb img {
 	box-shadow: 0 5px 5px rgba(0,0,0,.2);
 }
@@ -162,8 +188,17 @@ body {
 }
 .slider {
 	height: 150px;
-	background: url(https://img2.goodfon.su/original/360x480/1/ed/pirozhnye-krem-sladost.jpg) no-repeat;
 }
+.fade{
+	animation-name: fade;
+	animation-duration: 1.5s;
+
+}
+@keyframes fade{
+	from{opacity: .4}
+	to{opacity: 1}
+}
+
 
 
 
